@@ -1,0 +1,279 @@
+body{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+header{
+  height: 4rem;
+  background-image: linear-gradient(to bottom, #ffcbef, #f3c0f1, #e4b7f4, #d0aff9, #b7a9fd);
+  padding-top: 3rem;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-transform: uppercase;
+}
+main{
+  background-color: white;
+}
+
+
+
+img#hamburger {
+      background-color: white;
+      display: block;
+      position: absolute;
+      top: 10rem;
+      width: 2rem;
+      left: 49vw;
+}
+
+
+nav { background-color: white;
+      font-family: 'Oswald', sans-serif;
+      opacity: 0;
+      height: 0;
+      border-bottom: .1rem solid #ffcbef;
+      transition: all 1s;
+      text-align: center;
+      margin-top: 8rem;
+}
+
+nav a {
+      font-weight: 300;
+      color: black;
+      text-decoration: none;
+      font-size: 1rem;
+      margin: 0 2rem;
+}
+
+.zichtbaar {
+      opacity: 1;
+      height: 3rem;
+      margin-bottom: 1rem;
+}
+.achtergrond{
+  background-image: linear-gradient(to top, #875ff8, #9272fa, #9e85fc, #aa97fd, #b7a9fd);
+  height: 6.5rem;
+}
+h2 {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      padding-top: 4rem;
+      padding-left: 1rem;
+      font-size: 3rem;
+}
+
+.portfolio{
+  position: relative;
+  height: 95vh;
+}
+
+#een, #twee, #drie, #vier {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      height: 80vh;
+      transition: all 1s;
+      box-shadow: 1px 0px 10px rgba(0,0,0,0.2);
+      box-sizing: border-box;
+}
+
+#een {
+      background-color: white;
+      width: 80vw;
+      z-index: 10;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.5rem;
+}
+#een .a{
+  background-image: url(afbeeldingen/werk1.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#een .b{
+  background-image: url(afbeeldingen/werk2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#een.een-weg {
+      left: -70vw;
+      z-index: 20;
+}
+
+#twee {
+      background-color: white;
+      width: 85vw;
+      z-index: 8;
+      padding-left: 3rem;
+      padding-right: 2rem;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+}
+
+#twee .c{
+  background-image: url(afbeeldingen/werk3.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#twee .d{
+  background-image: url(afbeeldingen/werk4.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#twee .e{
+  background-image: url(afbeeldingen/werk5.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#twee .f{
+  background-image: url(afbeeldingen/werk6.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#twee.twee-weg {
+      left: -70vw;
+      z-index: 18;
+}
+
+#drie {
+      background-color: white;
+      width: 90vw;
+      z-index: 6;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.5rem;
+      padding-left: 5rem;
+}
+#drie .g{
+  background-image: url(afbeeldingen/werk7.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#drie .h{
+  background-image: url(afbeeldingen/werk8.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#drie.drie-weg {
+      left: -70vw;
+      z-index: 16;
+}
+
+#vier {
+  background-color: white;
+  width: 95vw;
+  z-index: 4;
+  padding-right: 3rem;
+}
+#vier .e {
+      background-image: url(afbeeldingen/werk9.jpg);
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+      height: 80vh;
+}
+
+.about{
+  padding: 2.5rem;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5rem;
+  height: 55vh;
+}
+
+
+.aboutfoto{
+  background-image: url(afbeeldingen/about.jpg);
+  background-size: cover;
+  height: 15rem;
+}
+.titelabout{
+  padding-top: 12.5rem;
+  background-image: linear-gradient(to top, #563e9b, #634fa4, #7060ad, #7e71b6, #8c82be);
+  mix-blend-mode:screen;
+}
+iframe {
+      width: 100vw;
+}
+
+.contact {
+      margin: 1rem auto 0rem auto;
+      overflow: hidden;
+      width: 610px;
+      height: 500px;
+}
+footer{
+  height: 15vh;
+  background-color: black;
+}
+	@media (min-width: 40rem) {
+
+    .about{
+      padding: 7rem 15rem;
+    }
+    #een{
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      padding:0 1rem;
+    }
+    #drie{
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      padding:0 3rem 0 8rem;
+    }
+    #twee{
+      padding:0 3rem 0 8rem;
+    }
+
+.aboutfoto{
+  background-size: contain;
+  background-position: center;
+}
+.titelabout{
+  background-image: linear-gradient(to right, blue,black,blue);
+  mix-blend-mode:color-dodge;
+}
+iframe {
+      width: 70vw;
+}
+
+  }
+  @media (min-width: 70rem) {
+    .about{
+      padding: 7rem 30rem;
+    }
+
+    iframe {
+          width: 40vw;
+    }
+    #twee{
+      padding:1rem 17rem 1rem 17rem;
+    }
+    #drie{
+      padding:1rem 17rem 1rem 17rem;
+    }
+    #vier{
+      padding:0 17rem 0 20rem;
+    }
+
+  }
